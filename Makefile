@@ -38,4 +38,6 @@ iris-ui: Dockerfile VERSION
 
 push: iris-ui
 	docker tag iris-ui:$(VERSION) irisacuk/iris-ui:$(VERSION)
+	docker tag iris-ui:$(VERSION) irisacuk/iris-ui:latest
 	docker push irisacuk/iris-ui:$(VERSION)
+	docker push irisacuk/iris-ui:latest
