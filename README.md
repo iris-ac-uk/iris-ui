@@ -42,5 +42,5 @@ an iris-ui Docker container as a non-privileged user:
 
 docker run --user user --tty --interactive \
   --volume $HOME/iris-ui-home:/home/user \
-  --workdir /home/user irisacuk/iris-ui:latest /bin/bash
+  --workdir /home/user irisacuk/iris-ui:latest /bin/bash --login
 
